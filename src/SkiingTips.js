@@ -1,3 +1,4 @@
+// imported React for the webpage as well as photos
 import React from 'react';
 import { Container, Card, Row, Col } from 'react-bootstrap';
 import skilesson from './skilesson.jpeg';

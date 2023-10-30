@@ -1,3 +1,4 @@
+// imported React for the webpage as well as photos
 import React from 'react';
 import { Container, Card, Row, Col } from 'react-bootstrap';
 import breck from './brecktown.jpeg';
@@ -11,6 +12,7 @@ function SkiingLocations() {
       <h2>Skiing Locations</h2>
       <Row>
         <Col md={4}>
+          {/* using cards to visually seperate skiing locations */}
           <Card>
           <img src={breck} alt="Downtown Breckenridge" style={{ width: '100%' }} height="200" />
             <Card.Body>
