@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import axios from 'axios';
+import breck from './breckenridge.jpeg';
+
 
 function Home() {
   const [data, setData] = useState([]);
@@ -37,14 +39,15 @@ function Home() {
         </Nav>
       </Navbar>
 
-      <h2>Welcome to Skiing Central</h2>
+      <center><h2>Welcome to Skiing Central</h2>
+      <img src={breck} alt="A beautiful mountain ski resort in Breckenridge Colorado" style={{ width: '700px', height: '500px' }}/>
       <ul>
         {data.map((item) => (
           <li key={item.id}>{item.name}</li>
           
         ))}
       </ul>
-
+          </center>
     </div>
   );
 }
